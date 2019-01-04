@@ -10,7 +10,7 @@ docker push mantissaman/multi-client:$SHA
 docker push mantissaman/multi-server:$SHA
 docker push mantissaman/multi-worker:$SHA
 
-kubectl delete -f server-deployment.yaml
+
 kubectl apply -f database-persistent-volume-claim.yaml
 kubectl apply -f worker-deployment.yaml
 kubectl apply -f ingress-service.yaml 
